@@ -53,7 +53,7 @@ body {
 .main-nav {
     display: flex;
     justify-content: space-between;
-    width: minmax(80%, 90%);
+    max-width: 85%;
     margin: 0 auto;
     padding: 1rem;
 }
