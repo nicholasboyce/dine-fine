@@ -29,7 +29,7 @@ body.appendChild(homeLogo);
 navBar();
 
 body.appendChild(content);
-
+setPage(currPage);
 
 
 function setPage(page) {

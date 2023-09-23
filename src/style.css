@@ -7,13 +7,13 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(foodbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -53,7 +53,7 @@ body {
 .main-nav {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: minmax(80%, 90%);
     margin: 0 auto;
     padding: 1rem;
 }
@@ -71,8 +71,9 @@ body {
     flex-direction: column;
     gap: 2rem;
     justify-content: space-around;
-    height: 80vh;
+    /* height: 80vh; */
     /* border: 5px pink solid; */
+    flex: 1;
 }
 
 .nav-container button {
@@ -117,4 +118,65 @@ body {
     margin: 0 auto;
     background-color: hsla(0, 0%, 40%, 0.8);
     padding: 1rem;
+}
+
+/* || HOURS PAGE CONTENT */
+
+.hours {
+    flex: 1;
+    background-color: hsla(0, 0%, 40%, 0.8);
+    padding: 1rem 0;
+    border-bottom: 2px hsla(0, 0%, 100%, 0.95) dotted;
+    border-top: 2px hsla(0, 0%, 100%, 0.95) dotted;
+    color: white;
+    display: grid;
+    place-items: center;
+    margin: 5rem 0;
+}
+
+/* || RESERVATIONS PAGE CONTENT */
+
+.rsvp {
+    background-color: hsla(0, 0%, 40%, 0.8);
+    padding: 1rem 0;
+    border-bottom: 2px hsla(0, 0%, 100%, 0.95) dotted;
+    border-top: 2px hsla(0, 0%, 100%, 0.95) dotted;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    flex: 1;
+}
+
+.rsvp h2 {
+    text-align: center;
+}
+
+.rsvp form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.form-container {
+    min-width: 80%;
+    max-width: 90%;
+    padding: 3rem 0;
+}
+
+.rsvp form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.rsvp form input {
+    padding: .8rem;
+    font-size: 1rem;
+}
+
+.rsvp form button {
+    margin: 0 auto;
 }
