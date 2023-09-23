@@ -1,3 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('./foodbackground.jpg');
+    height: 100vh;
+    background-image: url(foodbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 auto;
+    /* border: 5px pink solid; */
+    /* justify-content: center; */
+    overflow: scroll;
+}
+
+.home-logo {
+    text-align: center;
+    color: white;
+    background-color: hsla(0, 0%, 50%, 0.6);
+    width: 100%;
+    padding: 1rem;
+    font-size: calc(1rem + 2vw);
+}
+
+/* img {
+    object-fit: contain;
+    height: 100%;
+    max-width: 100%;
+    display: none;
+} */
+
+/* || UNIVERSAL NAV BAR */
+
+.main-nav-container {
+    background-color: hsla(0, 0%, 50%, 0.6);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-nav li {
+    list-style-type: none;
+    color: white;
+    font-size: calc(1rem + 0.1vw);
+}
+
+/* || HOME PAGE CONTENT */
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    height: 80vh;
+    /* border: 5px pink solid; */
+}
+
+.nav-container button {
+    border: 2px white solid;
+    background-color: hsla(0, 0%, 50%, 0.6);
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: calc(1rem + 2vw);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.nav-container button:hover, 
+.nav-container button:focus, 
+.nav-container button:active 
+{
+    background-color: hsla(0, 0%, 100%, 0.95);
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+/* || MENU PAGE CONTENT */
+
+.menu {
+    /* background-color: hsla(0, 0%, 50%, 0.6); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.5rem;
+    /* border: 5px pink solid; */
+    padding: 1rem 0;
+}
+
+.menu li {
+    list-style-type: none;
+    color: white;
+    border-bottom: 2px hsla(0, 0%, 100%, 0.95) dotted;
+    border-top: 2px hsla(0, 0%, 100%, 0.95) dotted;
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 40%, 0.8);
+    padding: 1rem;
 }
