@@ -129,7 +129,9 @@ body {
     border-bottom: 2px hsla(0, 0%, 100%, 0.95) dotted;
     border-top: 2px hsla(0, 0%, 100%, 0.95) dotted;
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     place-items: center;
     margin: 5rem 0;
 }
